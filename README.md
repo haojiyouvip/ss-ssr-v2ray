@@ -7,3 +7,14 @@
 <br>
 <img src="https://p.pstatp.com/origin/ff7900016419b0913ee4">
 
+# 失效请公众号：失心人，后台留言
+> 2020-12-07更新，12小时后自动失效，给的都是订阅地址
+
+### SS
+暂无
+
+### SSR
+https://toolbox.chenapp.com/uploads/file/2020/1207/1320308441.txt
+
+### V2RAY
+https://toolbox.chenapp.com/uploads/file/2020/1207/1317497787.txt
