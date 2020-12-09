@@ -9,7 +9,7 @@
 <img src="https://p.pstatp.com/origin/ff7900016419b0913ee4">
 
 # 失效请公众号：失心人，后台留言
-> 给的都是订阅地址，失效请去留言
+> 失效请去留言哦
 
 ### SS
 ss://YWVzLTI1Ni1nY206OG42cHdBY3JydjJwajZ0RlkycDNUYlE2QDE5OC44Ljg1LjgyOjMzOTky
