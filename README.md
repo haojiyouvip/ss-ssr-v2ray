@@ -15,7 +15,7 @@
 暂无
 
 ### SSR
-https://toolbox.chenapp.com/uploads/file/2020/1207/1320308441.txt
+ssr://NDcuMTEyLjIyOS4yOTo0MDEwMDpvcmlnaW46cmM0LW1kNTpwbGFpbjpkR1Z6ZERJd01qQS8_b2Jmc3BhcmFtPSZwcm90b3BhcmFtPSZyZW1hcmtzPTVyZXg1cGF3TFVsUVRFTXQ1WVdzNUx5WDVZLTM3N3lhNWFTeDViLUQ1THE2Nzd5TTZJNjM1WS1XNXB5QTVwYXc
 
 ### V2RAY
 https://toolbox.chenapp.com/uploads/file/2020/1207/1317497787.txt
