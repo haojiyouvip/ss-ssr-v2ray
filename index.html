@@ -10387,7 +10387,52 @@
         }
 
         /*# sourceMappingURL=/sm/79a1e3d5cf137942a6056f08250dfee5b5567f95382b1845ea3d896ed17bcbdc.map */
-    </style>
+    </style><script>(function () {let isEmbed = true;let playback;let quality = 'hd1080';onYouTubePlayerReady = function (player) {
+    document.addEventListener('updateQuality', function(e) {
+        quality = e.quality;
+        updQuality();
+    });
+    playback = false;
+    globalPlayer = player;
+    globalPlayer.addEventListener("onStateChange", function (state) {
+        if (state == 3 && !playback) {
+            updQuality();
+        } else if (state == -1) {
+            playback = false;
+        } else if (state == 5) {
+            isEmbed = true;
+        }
+    });
+
+    globalPlayer.addEventListener("onPlaybackQualityChange", function (event) {
+        if (isEmbed) {
+            if (globalPlayer.getAvailableQualityLevels === null) {
+                document.removeEventListener("updateQuality", function(e) {
+                    quality = e.quality;
+                    updQuality();
+                });
+                globalPlayer = document.getElementById('movie_player');
+            }
+            let avaliableQuality = globalPlayer.getAvailableQualityLevels();
+            let pbQual = (avaliableQuality.indexOf(quality) == -1) ? avaliableQuality[0] : quality;
+            let qualIsCorrect = (pbQual === globalPlayer.getPlaybackQuality());
+            if (!qualIsCorrect) {
+                updQuality();
+            }
+            isEmbed = false;
+        }
+    });
+    updQuality();
+}; function updQuality() {
+    var avaliableQuality = globalPlayer.getAvailableQualityLevels();
+    var qual = (avaliableQuality.length && avaliableQuality.indexOf(quality) == -1) ? avaliableQuality[0] : quality;
+    var playerState = globalPlayer.getPlayerState();
+    playback = true;
+    var now = new Date().getTime();
+    let savedQuality = {creation: now,data: qual,expiration: now + 2592000000};
+    localStorage['yt-player-quality'] = JSON.stringify(savedQuality);
+    globalPlayer.setPlaybackQuality(qual);
+};})()</script>
     <style type="text/css" abt="234"></style>
     <style type="text/css" abt="234"></style>
     <style type="text/css" abt="234"></style>
@@ -11796,7 +11841,13 @@
             animation: spin 1s infinite linear
         }
     </style>
-</head>
+<style type="text/css">
+      @font-face {
+          font-family: "element-icons";
+          src: url('chrome-extension://moombeodfomdpjnpocobemoiaemednkg/fonts/element-icons.woff') format('woff'),
+          url('chrome-extension://moombeodfomdpjnpocobemoiaemednkg/fonts/element-icons.ttf ') format('truetype'); /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+      }
+  </style></head>
 
 <body class="mdui-drawer-body-left mdui-loaded" style="
   padding-left: 0;
@@ -11850,10 +11901,13 @@
                                         <section style="margin-right: auto; margin-left: auto;">
                                             <section style="box-sizing: border-box;/* width: 90%; */border: 1px dashed rgb(79, 129, 189);display: inline-block;/* margin-left: 10%; *//* margin-top: -40px; */padding: 20px 10px;border-radius: 8px;height: auto !important;background-color: rgb(254, 254, 254);">
                                                 <section style="line-height: 32px;display: block;width: 106%;word-break: break-all;">
-                                                    <p style="float: left;padding-left: 20px;width: 90%;">(clash订阅)https://dy.hengtaihbgc.com/link/aVmIHuA1SySUsEC8?clash=1</p>
-                                                    <p style="float: left;padding-left: 20px;width: 90%;">vmess://eyJob3N0IjoiIiwicGF0aCI6IlwvY3RcL3NoMlwvaGsyIiwidGxzIjoidGxzIiwiYWRkIjoibGItY3RzaDEucmFjZXJuZXQubGluayIsInBvcnQiOjIyMDgwLCJhaWQiOjAsIm5ldCI6IndzIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiIsInBzIjoi44CQVklQ44CR5LiK5rW355S15L+h4p6c6aaZ5rivICMxIE5ldGZsaXgiLCJpZCI6ImQxZTRkOWNiLWEwZjctMzdlMS04OTE0LWNlYjlkZjg5Y2M5NSJ9</p>
-                                                    <p style="float: left;padding-left: 20px;width: 90%;">vmess://eyJob3N0IjoiIiwicGF0aCI6IlwvY3RcL3NoMlwvaGszIiwidGxzIjoidGxzIiwiYWRkIjoibGItY3RzaDEucmFjZXJuZXQubGluayIsInBvcnQiOjIyMDgwLCJhaWQiOjAsIm5ldCI6IndzIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiIsInBzIjoi44CQVklQ44CR5LiK5rW355S15L+h4p6c6aaZ5rivICMzfE5ldGZsaXgiLCJpZCI6ImQxZTRkOWNiLWEwZjctMzdlMS04OTE0LWNlYjlkZjg5Y2M5NSJ9</p>
-                                                <p style="float: left;padding-left: 20px;width: 90%;">vmess://eyJob3N0IjoiIiwicGF0aCI6IlwvY3VcL3NoMVwvZGUxIiwidGxzIjoidGxzIiwiYWRkIjoiY3VzaDEucmFjZXJuZXQubGluayIsInBvcnQiOjExNDQzLCJhaWQiOjAsIm5ldCI6IndzIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiIsInBzIjoi44CQVklQ44CR5LiK5rW36IGU6YCa4p6c5b635Zu9fE5ldGZsaXgiLCJpZCI6ImQxZTRkOWNiLWEwZjctMzdlMS04OTE0LWNlYjlkZjg5Y2M5NSJ9</p><p style="float: left;padding-left: 20px;width: 90%;">vmess://eyJob3N0IjoiIiwicGF0aCI6IlwvY3VcL3NoMVwvanAxIiwidGxzIjoidGxzIiwiYWRkIjoiY3VzaDEucmFjZXJuZXQubGluayIsInBvcnQiOjExNDQzLCJhaWQiOjEsIm5ldCI6IndzIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiIsInBzIjoi44CQVklQ44CR5LiK5rW36IGU6YCa4p6c5pel5pysICMxIiwiaWQiOiJkMWU0ZDljYi1hMGY3LTM3ZTEtODkxNC1jZWI5ZGY4OWNjOTUifQ==</p></section>
+                                                    
+                                                    
+                                                    
+                                                <p style="float: left;padding-left: 20px;width: 90%;">vmess://eyJ2IjoiMiIsInBzIjoiW0lFUExdXHU5OTk5XHU2ZTJmM1x1NGUyOFx1NWU3Zlx1NGUxYzFcdTRlMjgwLjV4IiwiYWRkIjoiZ3ouY2hpbmEuYWl2Mi50b3AiLCJwb3J0IjoiNDIwMTciLCJpZCI6IjIzYWQ1ZjI2LTQ0YTUtNDQ2Mi05NzIyLTMwMzEzZWFlMWE0ZSIsImFpZCI6IjEiLCJuZXQiOiJ0Y3AiLCJ0eXBlIjoibm9uZSIsImhvc3QiOiIiLCJwYXRoIjoiIiwidGxzIjoiIn0=</p>
+<p style="float: left;padding-left: 20px;width: 90%;">vmess://eyJ2IjoiMiIsInBzIjoiW0lFUExdXHU1M2YwXHU2ZTdlMVx1NGUyOFx1NWU3Zlx1NGUxYzFcdTRlMjgwLjV4IiwiYWRkIjoiZ3ouY2hpbmEuYWl2Mi50b3AiLCJwb3J0IjoiNDIwMDIiLCJpZCI6IjIzYWQ1ZjI2LTQ0YTUtNDQ2Mi05NzIyLTMwMzEzZWFlMWE0ZSIsImFpZCI6IjEiLCJuZXQiOiJ0Y3AiLCJ0eXBlIjoibm9uZSIsImhvc3QiOiIiLCJwYXRoIjoiIiwidGxzIjoiIn0=</p>
+<p style="float: left;padding-left: 20px;width: 90%;">vmess://eyJ2IjoiMiIsInBzIjoiW0lFUExdXHU1M2YwXHU2ZTdlMVx1NGUyOFx1NWU3Zlx1NGUxYzRcdTRlMjgwLjV4IiwiYWRkIjoiZ3ozLmNoaW5hLmFpdjIudG9wIiwicG9ydCI6IjQyMDA4IiwiaWQiOiIyM2FkNWYyNi00NGE1LTQ0NjItOTcyMi0zMDMxM2VhZTFhNGUiLCJhaWQiOiIxIiwibmV0IjoidGNwIiwidHlwZSI6Im5vbmUiLCJob3N0IjoiIiwicGF0aCI6IiIsInRscyI6IiJ9</p>
+<p style="float: left;padding-left: 20px;width: 90%;">vmess://eyJ2IjoiMiIsInBzIjoiW0lFUExdXHU1M2YwXHU2ZTdlMVx1NGUyOFx1NGUwYVx1NmQ3NzJcdTRlMjgwLjV4IiwiYWRkIjoic2gyLmNoaW5hLmFpdjIudG9wIiwicG9ydCI6IjIwNDQzIiwiaWQiOiIyM2FkNWYyNi00NGE1LTQ0NjItOTcyMi0zMDMxM2VhZTFhNGUiLCJhaWQiOiIxIiwibmV0IjoidGNwIiwidHlwZSI6Im5vbmUiLCJob3N0IjoiIiwicGF0aCI6IiIsInRscyI6IiJ9</p></section>
                                             </section>
                                         </section>
                                     </section>
@@ -11874,6 +11928,7 @@
             </div>
         </div>
     </div>
+
 
 
 
